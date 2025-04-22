@@ -1,7 +1,8 @@
-package hw4.game.cell;
+package hw4.maze;
 
 import java.awt.Component;
-import hw4.maze.test.*;
+
+
 
 public class Cell {
 	

@@ -2,6 +2,7 @@ package hw4.player.test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+
 import java.util.ArrayList;
 
 import org.junit.jupiter.api.AfterAll;
@@ -11,11 +12,9 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import hw4.maze.Cell;
-import hw4.maze.CellComponents;
 import hw4.maze.Grid;
 import hw4.maze.Row;
-import hw4.player.Player;
-
+import hw4.maze.*;
 class PlayerTest {
 	
 	private static Grid grid;
