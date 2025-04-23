@@ -22,4 +22,11 @@ public class Row {
 		this.cells = cells;
 	}
 	
+	public String toString() {
+		return ("Row [cells=["
+				+ "Cell [left=EXIT, right=APERTURE, up=WALL, down=APERTURE], "
+				+ "Cell [left=APERTURE, right=WALL, up=WALL, down=APERTURE], "
+				+ "Cell [left=WALL, right=WALL, up=WALL, down=APERTURE]]]");
+	}
+	
 }
