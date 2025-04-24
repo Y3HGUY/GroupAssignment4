@@ -5,7 +5,7 @@ import java.util.Random;
 
 public class Grid {
 	
-	private ArrayList<Row> rows;
+	private ArrayList<Row> rowList;
 /**
  * Constructor for Grid 
  * @param rows
@@ -33,7 +33,6 @@ public class Grid {
 				if (j == 0) {
 					left = CellComponents.EXIT;
 				}
-				
 				cells.add(new Cell(up, down, left, right));
 			}
 			rows.add(new Row(cells));
@@ -57,11 +56,11 @@ private CellComponents randomComponent(Random rand) {
 
 //Getter
 	public ArrayList<Row> getRows() {
-		return rows;
+		return rowList;
 	}
 //Setter
 	public void setRows(ArrayList<Row> rows) {
-		this.rows = rows;
+		this.rowList = rows;
 	}
 /**
  * Should pass toString for gridTest

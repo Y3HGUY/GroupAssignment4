@@ -21,7 +21,7 @@ public class Row {
 	public void setCells(ArrayList<Cell> cells) {
 		this.cells = cells;
 	}
-	
+	@Override
 	public String toString() {
 		return ("Row [cells=["
 				+ "Cell [left=EXIT, right=APERTURE, up=WALL, down=APERTURE], "
