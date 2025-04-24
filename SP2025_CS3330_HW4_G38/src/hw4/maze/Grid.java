@@ -15,7 +15,10 @@ public class Grid {
 		Random Rand =  new Random();
 		int size =  Rand.nextInt(5) +3;
 		
-		rows = new ArrayList<>();
+		this.rowList = rows;
+		/**
+		 * logic for random grid generation
+		 */
 		for (int i = 0; i < size; i++) {
 			ArrayList<Cell> cells = new ArrayList<>();
 			for (int j = 0; j < size; j++) {
@@ -29,13 +32,13 @@ public class Grid {
 						CellComponents.WALL && right == CellComponents.WALL) {
 					left = CellComponents.APERTURE;
 				}
-				//Exit it at the leftmost cell 
+				//Exit is at the leftmost cell 
 				if (j == 0) {
 					left = CellComponents.EXIT;
 				}
 				cells.add(new Cell(up, down, left, right));
 			}
-			rows.add(new Row(cells));
+			this.rowList.add(new Row(cells));
 		}
 	}
 /**
